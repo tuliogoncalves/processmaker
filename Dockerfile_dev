@@ -1,0 +1,14 @@
+FROM processmaker/pm4-dev:4.7v2
+
+COPY --chown=nginx build-files/env.dev /opt/.env
+COPY --chown=nginx build-files/env.dev /opt/processmaker/.env
+RUN mkdir -p /opt/scripts
+
+#
+# docker client
+#
+ENV DOCKERVERSION=20.10.5
+RUN curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKERVERSION}.tgz \
+  && tar xzvf docker-${DOCKERVERSION}.tgz --strip 1 \
+                 -C /usr/local/bin docker/docker \
+  && rm docker-${DOCKERVERSION}.tgz

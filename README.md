@@ -48,9 +48,9 @@ This build has no enterprise packages.
 
 ## Building the application image locally
 ```
-docker build -t processmaker:base -f Dockerfile.base .
+docker build -t processmaker:base74 -f Dockerfile.php74 .
 
-docker-compose build
+docker compose build
 ```
 
 ## Bind-mounting the docker socket
