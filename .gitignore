@@ -1,2 +1,5 @@
 bind-mount/composer/cache
 bind-mount/npm
+processmaker
+scripts
+mysql-data
