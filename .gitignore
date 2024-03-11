@@ -1,4 +1,6 @@
-/processmaker
-/scripts
-/sail_client/logs
+processmaker
+scripts
+sail_client/logs
 v4.8.3.zip
+sources
+mysql-data
