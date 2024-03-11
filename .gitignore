@@ -1,5 +1,4 @@
-bind-mount/composer/cache
-bind-mount/npm
-processmaker
-scripts
-mysql-data
+/processmaker
+/scripts
+/sail_client/logs
+v4.8.3.zip
