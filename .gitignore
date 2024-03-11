@@ -4,3 +4,4 @@ processmaker
 scripts
 mysql-data
 sources
+sail_client/logs

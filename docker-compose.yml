@@ -73,7 +73,7 @@ services:
             timeout: 10s
             retries: 5
     processmaker:
-        image: processmaker/pm4-dev:4.3v1
+        image: processmaker/pm4-dev:4.7v2
         ports:
             - '80:80'
             - '6001:6001'
@@ -91,7 +91,7 @@ services:
             - ./.env:/opt/.env
             - ./scripts:/opt/scripts
         environment:
-            PM_branch: '4.3.0+patch-3-les-schwab'
-            WAIT_FOR_DEPENDENTS: 0
+            PM_branch: '4.7.1'
+            WAIT_FOR_DEPENDENTS: 1
             DOCKER_HOST: 'tcp://docker:2375'
             NO_PROXY: "127.0.0.1,localhost,docker:2375"
